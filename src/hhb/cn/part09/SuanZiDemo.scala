@@ -60,13 +60,23 @@ object SuanZiDemo {
 
     val list3 = (1 to 10).toList
     println(list3.reduce(_ + _))
-
+    sortNum()
   }
 
   val fun: PartialFunction[Char, Char] = {
     case 'a' => 'A'
     case x => x
   }
+
+  def sortNum(): Unit = {
+    val list = List(1, 9, 3, 8, 6, 5)
+
+    val sortedList = list.sorted
+    println(list)
+    println(sortedList)
+
+  }
+
 
 }
 
